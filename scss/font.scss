@@ -1,0 +1,27 @@
+@for $i from 10 through 50 {
+    .fs-#{$i} {
+        font-size: $i*1px ;
+    }
+}
+
+
+
+// end css font-size
+
+// responsive font-size
+@media (max-width: 1280px) {
+    @for $i from 10 through 50 {
+        .fs-#{$i} {
+            font-size: calc($i*1px - 3px) ;
+        }
+    }
+}
+
+// responsive font-size
+
+// css font weight
+@for $i from 1 through 8 {
+    .fw-#{$i*100} {
+        font-weight: $i*100 ;
+    }
+}
