@@ -5,7 +5,16 @@
 }
 
 
-
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width:$i*1% ;
+    }
+}
+@for $i from 1 through 100 {
+    .maxw-#{$i} {
+        max-width:$i*1% ;
+    }
+}
 // end css font-size
 
 // responsive font-size

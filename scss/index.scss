@@ -4,22 +4,33 @@
 body,
 html {
     font-family: "Segoe UI";
-    color: #363636;
+    color: #202631;
     font-size: 14px;
 }
-.pb-6{
+
+.pb-6 {
     padding-bottom: 4rem;
 }
-.pt-6{
+
+.pt-6 {
     padding-top: 4rem;
 }
+.row {
+    --bs-gutter-x: 2rem;
+   
+}
+
 .img-cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.border-radius-50{
+
+.border-radius-50 {
     border-radius: 50%;
+}
+.border-bottom-solid-1{
+    border-bottom: 1px solid #E4E9F2;
 }
 .avatarUser-50 {
     display: block;
@@ -29,25 +40,28 @@ html {
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid $LightGrey;
-    &:hover{
+
+    &:hover {
         border: 1px solid $JordyBlue;
     }
 }
-.postUp{
-    a{
+
+.postUp {
+    a {
         position: relative;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
-    
-    span{
-        &.bg-color-9{
+
+    span {
+        &.bg-color-9 {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-        &.text-color-3{
+
+        &.text-color-3 {
             margin-bottom: 5px;
         }
     }
@@ -89,14 +103,17 @@ html {
             &:nth-last-child(2) {
                 border-bottom: 1px solid #ffffff1c;
             }
+
             svg {
                 max-width: 100%;
-                fill:#8f9bb3
+                fill: #8f9bb3
             }
-            &:hover,&.active{
+
+            &:hover,
+            &.active {
                 svg {
-                  
-                    fill:#fff
+
+                    fill: #fff
                 }
             }
         }
@@ -108,7 +125,9 @@ html {
     flex-shrink: 1;
 
     .mainContent {
-        flex-shrink: 1
+        flex-shrink: 1;
+        padding-top: 40px;
+
     }
 
     .barInfo {
@@ -119,18 +138,16 @@ html {
         border-radius: 65px 0px 0px 0px;
         opacity: 1;
     }
-    .listStory{
-       padding: 40px 0 0 0;
-       max-width: 90%;
-       margin: 0 auto;
-       &--item{
-        margin-right: 30px;
-        &:first-child{
-            margin-right: 45px;
+
+    .listStory {
+        margin: 0 auto;
+
+        &--item {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
-        &:last-child{
-            margin-right: 0;
-        }
-       }
     }
 }
