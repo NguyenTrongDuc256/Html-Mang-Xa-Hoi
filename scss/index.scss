@@ -8,6 +8,10 @@ html {
     font-size: 14px;
 }
 
+.pt-xp-4 {
+    padding-top: 40px;
+}
+
 .pb-6 {
     padding-bottom: 4rem;
 }
@@ -15,9 +19,10 @@ html {
 .pt-6 {
     padding-top: 4rem;
 }
+
 .row {
     --bs-gutter-x: 2rem;
-   
+
 }
 
 .img-cover {
@@ -26,16 +31,36 @@ html {
     object-fit: cover;
 }
 
+.img-posts {
+    width: 100%;
+    min-height: 200px;
+    height: 275px;
+    border-radius: 15px;
+}
+.h-vh-100{
+    height: 100vh;
+}
 .border-radius-50 {
     border-radius: 50%;
 }
-.border-bottom-solid-1{
+
+.border-bottom-solid-1 {
     border-bottom: 1px solid #E4E9F2;
 }
-.avatarUser-50 {
+.button-add{
+    width: 100px;
+    height: 32px;
+    background: $Chambray;
+    color: #FFF;
+    border-radius: 8px;
+    border: none;
+}
+
+
+@mixin avatarUser($value: 30px) {
     display: block;
-    width: 56px;
-    height: 56px;
+    width: $value;
+    height: $value;
     padding: 2px;
     border-radius: 50%;
     overflow: hidden;
@@ -45,6 +70,24 @@ html {
         border: 1px solid $JordyBlue;
     }
 }
+
+.avatarUser-56 {
+    @include avatarUser($value: 56px);
+}
+
+.avatarUser-50 {
+    @include avatarUser($value: 50px);
+    padding: 0;
+    border: none;
+}
+
+.avatarUser-30 {
+    @include avatarUser($value: 30px);
+    padding: 0;
+    border: none;
+}
+
+
 
 .postUp {
     a {
@@ -70,7 +113,7 @@ html {
 .siderBar {
     position: sticky;
     top: 0;
-    flex-basis: 120px;
+    flex-basis: 75px;
     padding-top: 40px;
     height: 100vh;
 
@@ -123,21 +166,14 @@ html {
 .bodyCard {
     border-radius: 65px 0px 0px 0px;
     flex-shrink: 1;
-
+    // background:linear-gradient(#00000030, #00000030), url('../image/hinh-nen-4k-cho-laptop-14.jpg') no-repeat;
+    background-size: cover;
     .mainContent {
         flex-shrink: 1;
         padding-top: 40px;
 
     }
 
-    .barInfo {
-        position: sticky;
-        top: 0;
-        flex-basis: 440px;
-        height: 100vh;
-        border-radius: 65px 0px 0px 0px;
-        opacity: 1;
-    }
 
     .listStory {
         margin: 0 auto;
@@ -148,6 +184,194 @@ html {
             &:last-child {
                 margin-right: 0;
             }
+        }
+    }
+}
+.white-space-nowrap{
+    white-space: nowrap;
+}
+.post_item {
+    &--img {
+        position: relative;
+    }
+
+    &--content {
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgb(0 0 0 / 85%) 0%, rgb(0 0 0 / 54%) 50%, rgb(0 0 0 / 1%) 100%);
+    }
+    &--info{
+        .like{
+
+            svg{
+                fill:#e4e9f2;
+            }
+            
+            &:hover,&.activelike{
+                svg{
+                    fill:red !important;
+                }
+            }
+        }
+    }
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.color-fill{
+    svg{
+        fill:#e4e9f2;
+    }
+    i{
+        color: #e4e9f2;
+    }
+}
+.activelike{
+    svg{
+        fill:red !important;
+    }
+}
+.barInfo {
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    flex-basis: 380px;
+    height: 100vh;
+    border-radius: 65px 0px 0px 0px;
+    opacity: 1;
+    &__header {
+        position: sticky;
+        top: 0;
+    }
+    &__main {
+       overflow-y: auto;
+    }
+}
+.search{
+    position: relative;
+    .input-custorm {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #E4E9F2;
+        border-radius: 25px;
+        opacity: 1;
+        padding: 0 40px 0 15px;
+        &:focus-visible{
+            outline: 1px solid $JordyBlue;
+        }
+        &::placeholder{
+            color: $LightGrey;
+        }
+    }
+    .icon-search{
+        position: absolute;
+        right: 8px;
+        top: calc(100%/2 - 50%/2);
+        border: none;
+        background: transparent;
+    }
+}
+.input-mess {
+    max-width: 70%;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E4E9F2;
+    border-radius: 25px;
+    opacity: 1;
+    padding: 0 40px 0 15px;
+    &:focus-visible{
+        outline: 1px solid $JordyBlue;
+    }
+    &::placeholder{
+        color: $LightGrey;
+    }
+}
+
+.border-solid-1-LavenderMist{
+    border: 1px solid $LavenderMist;
+}
+.item-img{
+    width: 100%;
+height: 129px;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+.ketban{
+    &:hover{
+        background: $JordyBlue;
+        color: $White;
+    }
+}
+.mess{
+    svg{
+        fill: $White;
+    }
+    background: $JordyBlue;
+}
+.box-mess{
+    border-radius: 65px 0px 0px 0px;
+    height: 65vh;
+    &--content{
+        height: calc(100% - 70px);
+    }
+    .formIb{
+        height: 70px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.user-1{
+    direction: rtl;
+    .noidungtin{
+        min-height: 40px;
+        max-width: 400px;
+        border-radius: 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        background: $Chambray;
+        margin-right: 10px;
+    }
+    .dotList{
+        margin-right: 5px;
+    }
+}
+.user-2{
+    .noidungtin{
+        min-height: 40px;
+        max-width: 400px;
+        border-radius: 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        background: $MarbleBlue;
+        margin-left: 10px;
+    }
+    .dotList{
+        margin-left: 5px;
+    }
+}
+
+.rtl{
+    direction: rtl;
+}
+.hoverAction{
+    &:hover{
+        border: none;
+        i{
+            color: $JordyBlue;
+        }
+    }
+}
+.hoverSub{
+    &:hover{
+        background: $JordyBlue;
+        i{
+            color: $White;
         }
     }
 }
