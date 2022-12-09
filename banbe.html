@@ -98,154 +98,142 @@
                         </li>
                     </ul>
                 </section>
-                <div class="bodyCard bg-color-3 flex-grow-1">
+                <div class="bodyCard bg-color-3 flex-grow-1" style="">
                     <div class="d-flex">
                         <section class="mainContent flex-grow-1">
                             <div class="maxw-60  m-auto w-100">
-                                <div class="mainContent__header d-flex align-items-center w-100  pb-5 border-bottom-solid-1">
+                                <div class="mainContent__header d-flex align-items-start w-100  pb-5 border-bottom-solid-1">
                                     <div class="postUp text-center ">
-                                        <a class="btn btn-primary avatarUser-56  mb-3 me-auto ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="modal1">
+                                        <a class="avatarUser-56  mb-3 me-auto ms-auto" href="">
                                             <span class="bg-color-9  d-flex align-items-center justify-content-center">
                                                 <span class="fs-35 fw-800 text-color-3">+</span>
                                             </span>
                                         </a>
                                         <p class="fs-14">Đăng bài</p>
                                     </div>
-                                    <div class="listStory d-flex align-items-center justify-content-between flex-grow-1 maxw-80 overflow-auto">
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                                <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Đức</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Hoàng Đức</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Văn Hải</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Khắc Hiếu</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Siêu Nhân</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Siêu Nhân</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Siêu Nhân</p>
-                                        </div>
-                                        <div class="listStory--item text-center">
-                                            <a class="avatarUser-56 mb-3 me-auto ms-auto" href="">
-                                               <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
-                                                    <img src="image/user1.png" alt="" />
-                                                </span>
-                                            </a>
-                                            <p class="fs-14 white-space-nowrap">Siêu Nhân</p>
-                                        </div>
-                                    </div>
-                                    <div class="showAll postUp  text-center ">
-                                        <a class="avatarUser-56  mb-3 me-auto ms-auto" href="">
-                                            <span class="bg-color-9  d-flex align-items-center justify-content-center">
-                                                <span class="fs-35 fw-800 text-color-3">::</span>
-                                            </span>
-                                        </a>
-                                        <p class="fs-14">Xem tất cả</p>
-                                    </div>
+                                    <form class="mt-1 search listStory d-flex align-items-center justify-content-between flex-grow-1 maxw-80 overflow-auto">
+                                        <input type="text" class="input-custorm fs-14 w-100" placeholder="Tìm kiếm">
+                                        <button class="icon-search" type="submit"><img src="image\search_left.svg" alt=""></button>
+                                    </form>
+                                   
                                 </div>
                                 <div class="mainContent__body mt-4">
                                     <div class="d-flex align-items-baseline justify-content-between mb-4">
-                                        <h2 class="fs-22 fw-600">Bảng tin</h2>
-                                        <ul class="d-flex align-items-center">
+                                        <h2 class="fs-22 fw-600">Bạn bè</h2>
+                                        <!-- <ul class="d-flex align-items-center">
                                             <li class="">
                                                 <a href="">Tất cả</a>
                                             </li>
                                             <li class="ps-4">
-                                                <a href="">Bạn bè</a>
+                                                <a href="">Cá nhân</a>
                                             </li>
                                             <li class="ps-4">
-                                                <a href="">Theo dõi</a>
+                                                <a href="">chia sẻ</a>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                     <div class="row">
-                                        <div class="col-xxl-6 col-xl-6 col-sm-12 mb-4">
+                                        <div class="col-xxl-4 col-xl-4 col-sm-12 mb-4">
                                             <div class="post_item ">
-                                                <div class="post_item--img img-posts overflow-hidden">
+                                                <div class="post_item--img img-banbe overflow-hidden">
                                                     <img class="img-cover" src="image\hd2.png" alt="">
-                                                    <div class="post_item--content text-color-3 p-3 "><p class="webkit-box-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, modi suscipit ipsum repellendus commodi accusamus perferendis blanditiis quas esse minus. Dolore sit sunt perferendis, nihil error possimus blanditiis officiis quas?</p></div>
                                                 </div>
-                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-3">
-                                                    <div class="post_item--user d-flex align-items-center">
-                                                        <span class="avatarUser-30 me-2"><img class="img-cover" src="image\user1.png" alt=""></span>
-                                                        <span>Nguyễn Trọng Đức</span>
+                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-2">
+                                                    <div class="post_item--user d-flex align-items-center">  
+                                                        <span class="fs-13 fw-500">Nguyễn Trọng Đức</span>
                                                     </div>
                                                     <div class="post_item--action d-flex align-items-center">
-                                                        <div class="like">
-                                                            <img src="" alt=""><span>25k</span>
-                                                        </div>
-                                                        <div class="comment">
-                                                            <img src="" alt=""><span>200</span>
-                                                        </div>
+                                                        <button class="banbe add avatarUser-30 bg-color-7 text-color-3">
+                                                            <i class="fas fa-user-plus"></i>
+                                                        </button>
+                                                        <button class="banbe avatarUser-30 bg-color-9 text-color-3">
+                                                            <i class="fal fa-comment-dots"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xxl-6 col-xl-6 col-sm-12 mb-4">
+                                        <div class="col-xxl-4 col-xl-4 col-sm-12 mb-4">
                                             <div class="post_item ">
-                                                <div class="post_item--img img-posts overflow-hidden">
-                                                    <img class="img-cover" src="image\hd1.png" alt="">
-                                                    <div class="post_item--content text-color-3 p-3 "><p class="webkit-box-2">Hôm nay trời đẹp</p></div>
+                                                <div class="post_item--img img-banbe overflow-hidden">
+                                                    <img class="img-cover" src="image\hd2.png" alt="">
                                                 </div>
-                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-3">
-                                                    <div class="post_item--user d-flex align-items-center">
-                                                        <span class="avatarUser-30 me-2"><img class="img-cover" src="image\user1.png" alt=""></span>
-                                                        <span>Nguyễn Trọng Đức</span>
+                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-2">
+                                                    <div class="post_item--user d-flex align-items-center">  
+                                                        <span class="fs-13 fw-500">Nguyễn Trọng Đức</span>
                                                     </div>
                                                     <div class="post_item--action d-flex align-items-center">
-                                                        <div class="like">
-                                                            <img src="" alt=""><span>25k</span>
-                                                        </div>
-                                                        <div class="comment">
-                                                            <img src="" alt=""><span>200</span>
-                                                        </div>
+                                                        <button class="banbe add avatarUser-30 bg-color-7 text-color-3">
+                                                            <i class="fas fa-user-plus"></i>
+                                                        </button>
+                                                        <button class="banbe avatarUser-30 bg-color-9 text-color-3">
+                                                            <i class="fal fa-comment-dots"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-xxl-4 col-xl-4 col-sm-12 mb-4">
+                                            <div class="post_item ">
+                                                <div class="post_item--img img-banbe overflow-hidden">
+                                                    <img class="img-cover" src="image\hd2.png" alt="">
+                                                </div>
+                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-2">
+                                                    <div class="post_item--user d-flex align-items-center">  
+                                                        <span class="fs-13 fw-500">Nguyễn Trọng Đức</span>
+                                                    </div>
+                                                    <div class="post_item--action d-flex align-items-center">
+                                                        <button class="banbe add avatarUser-30 bg-color-7 text-color-3">
+                                                            <i class="fas fa-user-plus"></i>
+                                                        </button>
+                                                        <button class="banbe avatarUser-30 bg-color-9 text-color-3">
+                                                            <i class="fal fa-comment-dots"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-sm-12 mb-4">
+                                            <div class="post_item ">
+                                                <div class="post_item--img img-banbe overflow-hidden">
+                                                    <img class="img-cover" src="image\hd2.png" alt="">
+                                                </div>
+                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-2">
+                                                    <div class="post_item--user d-flex align-items-center">  
+                                                        <span class="fs-13 fw-500">Nguyễn Trọng Đức</span>
+                                                    </div>
+                                                    <div class="post_item--action d-flex align-items-center">
+                                                        <button class="banbe add avatarUser-30 bg-color-7 text-color-3">
+                                                            <i class="fas fa-user-plus"></i>
+                                                        </button>
+                                                        <button class="banbe avatarUser-30 bg-color-9 text-color-3">
+                                                            <i class="fal fa-comment-dots"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-sm-12 mb-4">
+                                            <div class="post_item ">
+                                                <div class="post_item--img img-banbe overflow-hidden">
+                                                    <img class="img-cover" src="image\hd2.png" alt="">
+                                                </div>
+                                                <div class="post_item--info d-flex align-items-center justify-content-between mt-2">
+                                                    <div class="post_item--user d-flex align-items-center">  
+                                                        <span class="fs-13 fw-500">Nguyễn Trọng Đức</span>
+                                                    </div>
+                                                    <div class="post_item--action d-flex align-items-center">
+                                                        <button class="banbe add avatarUser-30 bg-color-7 text-color-3">
+                                                            <i class="fas fa-user-plus"></i>
+                                                        </button>
+                                                        <button class="banbe avatarUser-30 bg-color-9 text-color-3">
+                                                            <i class="fal fa-comment-dots"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -253,22 +241,107 @@
                         </section>
                         <section class="barInfo bg-color-4 pt-xp-4">
                             <div class="barInfo__header d-flex align-items-center justify-content-between w-100 ps-4 pe-4">
-                                <form class="search w-57" action="">
-                                    <input type="text" class="input-custorm fs-14" placeholder="Tìm kiếm">
-                                    <button class="icon-search" type="submit"><img src="image\search_left.svg" alt=""></button>
-                                </form>
-                                <div class="border-solid-1-LavenderMist avatarUser-50 d-flex align-items-center justify-content-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-                                        <path id="notification" d="M9,24a3.829,3.829,0,0,1-3.744-3.188H.692A.7.7,0,0,1,0,20.11V17.3a.705.705,0,0,1,.309-.585l1.075-.729V9.656A7.775,7.775,0,0,1,3.392,4.428,7.554,7.554,0,0,1,8.308,1.954V.7A.692.692,0,1,1,9.692.7V1.954a7.555,7.555,0,0,1,4.915,2.474,7.775,7.775,0,0,1,2.008,5.228v6.327l1.075.729A.705.705,0,0,1,18,17.3V20.11a.7.7,0,0,1-.692.7H12.744A3.829,3.829,0,0,1,9,24ZM6.675,20.813a2.408,2.408,0,0,0,4.649,0ZM9,3.328A6.287,6.287,0,0,0,2.769,9.656v6.7a.705.705,0,0,1-.309.585l-1.076.729v1.733H16.616V17.673l-1.076-.729a.705.705,0,0,1-.309-.585v-6.7A6.287,6.287,0,0,0,9,3.328Z" transform="translate(0 0)" fill="#8f9bb3"/>
-                                      </svg>
+                                <div class="d-flex align-items-center">
+                                    <a class="border-solid-1-LavenderMist avatarUser-50 d-flex align-items-center justify-content-center me-3 bg-color-7 text-color-3 fs-18 ketban">
+                                        <i class="fas fa-user-plus"></i>
+                                    </a>
+                                    <div class="border-solid-1-LavenderMist avatarUser-50 d-flex align-items-center justify-content-center mess">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.996" height="30" viewBox="0 0 29.996 30">
+                                            <defs>
+                                              <clipPath id="clip-path">
+                                                <path id="Clip_2" data-name="Clip 2" d="M0,0H30V30H0Z" transform="translate(0.004)" fill="none"></path>
+                                              </clipPath>
+                                            </defs>
+                                            <g id="messenger" transform="translate(-0.004)" opacity="1">
+                                              <path id="Clip_2-2" data-name="Clip 2" d="M0,0H30V30H0Z" transform="translate(0.004)" fill="none"></path>
+                                              <g id="messenger-2" data-name="messenger" clip-path="url(#clip-path)">
+                                                <path id="Fill_1" data-name="Fill 1" d="M1.172,30a1.184,1.184,0,0,1-.83-.343,1.167,1.167,0,0,1-.286-1.188l1.932-6a15,15,0,1,1,5.544,5.544l-6,1.933A1.168,1.168,0,0,1,1.172,30Zm6.506-4.44a1.17,1.17,0,0,1,.622.179A12.659,12.659,0,1,0,4.261,21.7a1.172,1.172,0,0,1,.122.981L2.988,27.013l4.333-1.4A1.168,1.168,0,0,1,7.679,25.56Zm13.18-9.1A1.465,1.465,0,1,1,22.324,15,1.466,1.466,0,0,1,20.859,16.465Zm-5.859,0A1.465,1.465,0,1,1,16.465,15,1.466,1.466,0,0,1,15,16.465Zm-5.86,0A1.465,1.465,0,1,1,10.606,15,1.466,1.466,0,0,1,9.14,16.465Z"></path>
+                                              </g>
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <a class="avatarUser-50 ms-3" href="trangcanhan.html">
+                             
+                                <a class="avatarUser-50 ms-3" href="">
                                     <span class="w-100 h-100 overflow-hidden d-block border-radius-50">
                                          <img src="image/user1.png" alt="" />
                                      </span>
                                  </a>
                             </div>
                             <div class="barInfo__main">
+                                <div class="barInfo__main--item ps-3 pe-3">
+                                    <div class="d-flex align-content-center justify-content-between mt-4">
+                                        <h3 class="fs-16 fw-500">Thông tin cá nhân</h3>
+                                        <a href="" class="fs-14 text-color-7">Sửa</a>
+                                    </div>
+                                    <ul class="mt-3 d-table">
+                                      <li class="d-table-row">
+                                        <div class="d-flex align-items-center d-table-cell p-1">
+                                            <span class="me-2"><i class="fal fa-map-marker-alt"></i></span>
+                                            <p class="fs-14 fw-500">Thành phố :</p>
+                                        </div>
+                                        <p class="text-color-7 d-table-cell">Hà nội</p>
+                                      </li> 
+                                      <li class="d-table-row">
+                                        <div class="d-flex align-items-center d-table-cell p-1">
+                                            <span class="me-2"><i class="fal fa-map-marker-alt"></i></span>
+                                            <p class="fs-14 fw-500">Trường học :</p>
+                                        </div>
+                                        <p class="text-color-7 d-table-cell">Đại học Điện Lực</p>
+                                      </li> 
+                                      <li class="d-table-row">
+                                        <div class="d-flex align-items-center d-table-cell p-1">
+                                            <span class="me-2"><i class="fal fa-map-marker-alt"></i></span>
+                                            <p class="fs-14 fw-500">Ngày sinh :</p>
+                                        </div>
+                                        <p class="text-color-7 d-table-cell">25/06/2000</p>
+                                      </li> 
+                                      <li class="d-table-row">
+                                        <div class="d-flex align-items-center d-table-cell p-1">
+                                            <span class="me-2"><i class="fal fa-map-marker-alt"></i></span>
+                                            <p class="fs-14 fw-500">Tình trạng :</p>
+                                        </div>
+                                        <p class="text-color-7 d-table-cell">Độc thân</p>
+                                      </li> 
+                                      <li class="d-table-row">
+                                        <div class="d-flex align-items-center d-table-cell p-1">
+                                            <span class="me-2"><i class="fal fa-map-marker-alt"></i></span>
+                                            <p class="fs-14 fw-500">Facebook :</p>
+                                        </div>
+                                        <p class="text-color-7 d-table-cell">https:/facebook/ducnguyen.256</p>
+                                      </li> 
+                                     
+                                    </ul>
+                                </div>
+                                <div class="barInfo__main--item ps-3 pe-3">
+                                    <div class="d-flex align-content-center justify-content-between mt-4">
+                                        <h3 class="fs-16 fw-500">Ảnh</h3>
+                                        <a href="" class="fs-14 text-color-7">Xem tất cả</a>
+                                    </div>
+                                    <div class="mt-4 row">
+                                      <div class="col-6 mb-3">
+                                        <div class="item-img">
+                                            <img class="img-cover" src="image\gt1.png" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6 mb-3">
+                                        <div class="item-img">
+                                            <img class="img-cover" src="image\gt1.png" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6 mb-3">
+                                        <div class="item-img">
+                                            <img class="img-cover" src="image\gt1.png" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-6 mb-3">
+                                        <div class="item-img">
+                                            <img class="img-cover" src="image\gt1.png" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                
                                 <div class="barInfo__main--item ps-3 pe-3">
                                     <div class="d-flex align-content-center justify-content-between mt-4">
                                         <h3 class="fs-16 fw-500">Gợi ý kết bạn</h3>
@@ -319,50 +392,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="barInfo__main--item ps-3 pe-3">
-                                    <div class="d-flex align-content-center justify-content-between mt-4">
-                                        <h3 class="fs-16 fw-500">Khoảng khắc</h3>
-                                        <!-- <a href="" class="fs-14 text-color-7">Xem thêm</a> -->
-                                    </div>
-                                    <div class="mt-4 row">
-                                      <div class="col-6 mb-3">
-                                        <div class="item-img">
-                                            <img class="img-cover" src="image\gt1.png" alt="">
-                                        </div>
-                                      </div>
-                                      <div class="col-6 mb-3">
-                                        <div class="item-img">
-                                            <img class="img-cover" src="image\gt1.png" alt="">
-                                        </div>
-                                      </div>
-                                      <div class="col-6 mb-3">
-                                        <div class="item-img">
-                                            <img class="img-cover" src="image\gt1.png" alt="">
-                                        </div>
-                                      </div>
-                                      <div class="col-6 mb-3">
-                                        <div class="item-img">
-                                            <img class="img-cover" src="image\gt1.png" alt="">
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="barInfo__main--item ps-3 pe-3">
-                                    <div class="d-flex align-content-center justify-content-between mt-4">
-                                        <h3 class="fs-16 fw-500">Thông báo</h3>
-                                        <a href="" class="fs-14 text-color-7">Xem thêm</a>
-                                    </div>
-                                    <ul class="mt-4">
-                                      <li class="mt-3 d-flex align-items-center">
-                                        <span class="me-2"><img src="image\comment-2.png" alt=""></span>
-                                        <p class="fs-14 fw-500">You’ve Comented on Ahmed Mohamed Shot</p>
-                                      </li> 
-                                      <li class="mt-3 d-flex align-items-center">
-                                        <span class="me-2"><img src="image\like.png" alt=""></span>
-                                        <p class="fs-14 fw-500">You’ve Liked Noha Mohamed Shot</p>
-                                      </li> 
-                                    </ul>
-                                </div>
                             </div>
                             
                         </section>
@@ -370,52 +399,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Đăng bài</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Recipient:</label>
-                      <input type="file" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
-
-        <script>
-            var exampleModal = document.getElementById('exampleModal')
-                exampleModal.addEventListener('show.bs.modal', function (event) {
-                // Button that triggered the modal
-                var button = event.relatedTarget
-                // Extract info from data-bs-* attributes
-                var recipient = button.getAttribute('data-bs-whatever')
-                // If necessary, you could initiate an AJAX request here
-                // and then do the updating in a callback.
-                //
-                // Update the modal's content.
-                // var modalTitle = exampleModal.querySelector('.modal-title')
-                var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-                modalTitle.textContent = 'New message to ' + recipient
-                modalBodyInput.value = recipient
-            })
-        </script>
         <!-- CDN Jquery -->
         <script src="js/jquery-3.6.0.min.js"></script>
         <!-- Lib js -->
