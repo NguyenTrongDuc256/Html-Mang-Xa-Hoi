@@ -1676,6 +1676,10 @@ html {
   border-radius: 50%;
 }
 
+.border-radius-15 {
+  border-radius: 15px;
+}
+
 .border-bottom-solid-1 {
   border-bottom: 1px solid #E4E9F2;
 }
@@ -1750,7 +1754,7 @@ html {
 .siderBar {
   position: sticky;
   top: 0;
-  flex-basis: 75px;
+  flex-basis: 125px;
   padding-top: 40px;
   height: 100vh;
 }
@@ -1785,6 +1789,10 @@ html {
 }
 .siderBar__menu li:hover svg, .siderBar__menu li.active svg {
   fill: #fff;
+}
+
+.border-radius-left-top {
+  border-radius: 65px 0px 0px 0px;
 }
 
 .bodyCard {
@@ -1828,6 +1836,11 @@ html {
   fill: red !important;
 }
 
+.maxw-1340px {
+  max-width: 1340px;
+  padding: 0 5rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1847,7 +1860,7 @@ html {
   overflow-y: auto;
   position: sticky;
   top: 0;
-  flex-basis: 380px;
+  flex-basis: 600px;
   height: 100vh;
   border-radius: 65px 0px 0px 0px;
   opacity: 1;
@@ -1985,6 +1998,10 @@ html {
 }
 .hoverSub:hover i {
   color: #ffffff;
+}
+
+.postDetail--img {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
