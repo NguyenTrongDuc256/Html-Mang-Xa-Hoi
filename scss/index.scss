@@ -24,6 +24,9 @@ html {
     --bs-gutter-x: 2rem;
 
 }
+.hidden{
+    display: none !important;
+}
 
 .img-cover {
     width: 100%;
@@ -53,10 +56,31 @@ html {
         }
     }
 }
+.input-comment-v1{
+    height: 30px;
+    border: 1px solid #e5e5e5b4;
+    border-radius: 18px;
+    &:focus-visible{
+        outline: none;
+    }
+}
+.btn-comment-v1{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 8px;
+}
 .comment__body .post-item__stats__item {
     position: absolute;
     left: calc(100% - 10px);
     bottom: 0;
+}
+.post-item{
+    &__comments{
+        border-top: 1px solid #ffffffb4;
+    }
 }
 .img-posts {
     width: 100%;
